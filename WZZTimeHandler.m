@@ -47,6 +47,7 @@
     NSString * secStr = [formatter stringFromDate:date];
     
     WZZTimeHandler * handle = [[WZZTimeHandler alloc] init];
+    handle.date = date;
     handle.year = yearStr.intValue;
     handle.month = monthStr.intValue;
     handle.day = dayStr.intValue;

@@ -17,6 +17,7 @@
 @property (nonatomic, assign) int min;
 @property (nonatomic, assign) int sec;
 @property (nonatomic, assign) int timeTemp;
+@property (nonatomic, strong) NSDate * date;
 
 /**
  获取当前时间

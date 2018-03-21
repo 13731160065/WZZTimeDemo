@@ -70,6 +70,9 @@
 }
 
 + (instancetype)timeWithTimeStr:(NSString *)timeStr {
+    if (timeStr.length == 10) {
+        timeStr = [timeStr stringByAppendingString:@" 00:00:00"];
+    }
     if (timeStr.length == 16) {
         timeStr = [timeStr stringByAppendingString:@":00"];
     }
